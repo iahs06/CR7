@@ -1,10 +1,34 @@
-<section id="galeria">
-    <h2>Galería</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Cristiano_Ronaldo_2016.jpg" alt="Imagen 1" style="width:100%;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Cristiano_Ronaldo_-_Portugal.jpg" alt="Imagen 2" style="width:100%;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Cristiano_Ronaldo_Real_Madrid.jpg" alt="Imagen 3" style="width:100%;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Cristiano_Ronaldo_Juventus.jpg" alt="Imagen 4" style="width:100%;">
-        <!-- Añade más imágenes o videos según sea necesario -->
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Cristiano Ronaldo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Cristiano Ronaldo</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="titulos.html">Títulos y Récords</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo 2018" style="width:30%;margin:10px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Cristiano_Ronaldo_in_2019.jpg" alt="Cristiano Ronaldo 2019" style="width:30%;margin:10px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Cristiano_Ronaldo_2018-08-15.jpg" alt="Cristiano Ronaldo 2018" style="width:30%;margin:10px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JtbBz6uY20A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;max-width:600px;margin:10px;"></iframe>
+        </div>
+    </section>
+    <footer>
+        <p>Contador de visitas: <span id="visitas">0</span></p>
+    </footer>
+    <script>
+        // Simulación de contador de visitas
+        document.getElement
