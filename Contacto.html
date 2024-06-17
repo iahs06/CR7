@@ -1,19 +1,45 @@
-<section id="contacto">
-    <h2>Contacto</h2>
-    <form style="display:flex;flex-direction:column;max-width:600px;margin:auto;">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required style="padding:10px;margin-bottom:10px;">
-        
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required style="padding:10px;margin-bottom:10px;">
-        
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required style="padding:10px;margin-bottom:10px;"></textarea>
-        
-        <button type="submit" style="padding:10px;background-color:#006600;color:white;border:none;cursor:pointer;">Enviar</button>
-    </form>
-    <div style="text-align:center;margin-top:20px;">
-        <p>Teléfono: +351 123 456 789</p>
-        <p>Email: contacto@cristianoronaldo.com</p>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Cristiano Ronaldo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="titulos.html">Títulos y Récords</a>
+        <a href="galeria.html">Galería</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form style="max-width:600px;margin:auto;">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" style="width:100%;margin-bottom:10px;">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" style="width:100%;margin-bottom:10px;">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" style="width:100%;margin-bottom:10px;"></textarea>
+            <button type="submit" style="background-color:#ff3333;color:white;padding:10px 20px;border:none;cursor:pointer;">Enviar</button>
+        </form>
+        <div style="text-align:center;margin-top:20px;">
+            <p>Teléfono: +351 123 456 789</p>
+            <p>Email: contacto@cristianoronaldo.com</p>
+        </div>
+    </section>
+    <footer>
+        <p>Contador de visitas: <span id="visitas">0</span></p>
+    </footer>
+    <script>
+        // Simulación de contador de visitas
+        document.getElementById('visitas').textContent = Math.floor(Math.random() * 1000);
+    </script>
+</body>
+</html>
+
