@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Cristiano Ronaldo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Cristiano Ronaldo</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="titulos.html">Títulos y Récords</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <section id="galeria">
+        <h2>Galería de Imágenes y Videos</h2>
+        <div class="gallery">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Cristiano_Ronaldo_2011.jpg" alt="Imagen 1">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Cristiano_Ronaldo_2015.jpg" alt="Imagen 2">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Cristiano_Ronaldo_Russia_2017.jpg" alt="Imagen 3">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Cristiano_Ronaldo_-_2019.jpg" alt="Imagen 4">
+            </div>
+        </div>
+        <div style="text-align:center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JtbBz6uY20A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer>
+        <p>Contador de visitas: <span id="visitas">0</span></p>
+    </footer>
+    <script>
+        // Simulación de contador de visitas
+        document.getElementById('visitas').textContent = Math.floor(Math.random() * 1000);
+    </script>
+</body>
+</html>
+
